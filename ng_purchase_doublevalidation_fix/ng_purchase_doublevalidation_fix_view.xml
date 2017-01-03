@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+      <record model="ir.ui.view" id="purchase_double_validation_company_form">
+             <field name="name">res.company.double.validation.purchase</field>
+             <field name="model">res.company</field>
+             <field name="inherit_id" ref="base.view_company_form" />
+             <field name="arch" type="xml">
+                    <field name="currency_id" position="after">
+                            <field name="limit_amount" readonly="0"/>
+                    </field>
+             </field>
+        </record>
+
+</data>
+</openerp>
